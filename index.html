@@ -4,54 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabiano Monteiro - Desenvolvedor de Software</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
-        /* CSS básico para estilo */
+        /* Estilos básicos */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #181818;
+            color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
+
+        /* Estilos de seção */
         header {
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
+
         h1 {
-            font-size: 2.5em;
-            color: #333;
+            font-size: 2.8em;
+            color: #f8f8f8;
         }
+
         p.lead {
-            font-size: 1.2em;
-            color: #666;
+            font-size: 1.3em;
+            color: #b0b0b0;
         }
+
         .section {
             margin-top: 40px;
         }
+
+        h2 {
+            color: #ffcc00;
+            font-size: 1.8em;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+
         .projects, .social {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
+
         .project-item, .social-item {
             padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #fff;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background-color: #222;
             text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
+
+        .project-item:hover, .social-item:hover {
+            transform: scale(1.05);
+            background-color: #333;
+        }
+
         a {
-            color: #0073e6;
+            color: #ffcc00;
             text-decoration: none;
+            font-weight: bold;
         }
+
         a:hover {
-            color: #005bb5;
+            color: #ffd633;
+        }
+
+        /* Botão interativo */
+        .call-to-action {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            color: #181818;
+            background-color: #ffcc00;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .call-to-action:hover {
+            background-color: #ffd633;
         }
     </style>
 </head>
@@ -60,29 +99,24 @@
     <div class="container">
         <!-- Cabeçalho -->
         <header>
-            <h1>Fabiano Monteiro</h1>
-            <p class="lead">Especialista em desenvolvimento de software, apaixonado por inovação e comprometido com a comunidade de desenvolvedores.</p>
+            <h1>Bem-vindo(a) ao meu universo dev! 🌌</h1>
+            <p class="lead">Eu sou o Fabiano Monteiro, desenvolvedor de software com mais de 20 anos de experiência, apaixonado por inovação e pelo impacto que um bom código pode trazer ao mundo.</p>
         </header>
 
         <!-- Sobre Mim -->
         <section class="section" id="about">
-            <h2>Sobre Mim</h2>
-            <p>Sou Fabiano Monteiro, desenvolvedor de software com mais de 20 anos de experiência. Gosto de resolver problemas e criar soluções que inspiram e impactam a vida das pessoas. Meu foco é desenvolver código elegante e eficiente, além de compartilhar conhecimento para o crescimento da comunidade.</p>
+            <h2>Um Pouco Sobre Mim 💡</h2>
+            <p>Imagine um código que funciona como mágica: elegante, funcional e sustentável. É assim que vejo o desenvolvimento de software, e todos os dias me empenho para tornar isso realidade. Meu objetivo é sempre criar soluções que não apenas resolvem problemas, mas que também inspiram outros devs. Aqui, compartilho um pouco do que faço e do que acredito.</p>
         </section>
 
         <!-- Projetos -->
         <section class="section" id="projects">
-            <h2>Projetos</h2>
+            <h2>Projetos que Me Inspiram 🚀</h2>
             <div class="projects">
                 <div class="project-item">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição breve do projeto e seu propósito.</p>
-                    <a href="https://github.com/seu-usuario/projeto1" target="_blank">Ver no GitHub</a>
-                </div>
-                <div class="project-item">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição breve do projeto e seu propósito.</p>
-                    <a href="https://github.com/seu-usuario/projeto2" target="_blank">Ver no GitHub</a>
+                    <h3>AWS Certification Prompts</h3>
+                    <p>uma coleção de prompts de simulado para certificações AWS!</p>
+                    <a href="https://github.com/fabianomonteiro/aws-certification-prompts " target="_blank">Ver no GitHub</a>
                 </div>
                 <!-- Adicione mais projetos conforme necessário -->
             </div>
@@ -90,19 +124,16 @@
 
         <!-- Redes Sociais -->
         <section class="section" id="contact">
-            <h2>Vamos nos Conectar!</h2>
+            <h2>Conecte-se Comigo 🌎</h2>
             <div class="social">
                 <div class="social-item">
-                    <a href="https://linkedin.com/in/fabiano-monteiro-dev" target="_blank">LinkedIn</a>
+                    <a href="https://linkedin.com/in/fabiano-monteiro-dev" target="_blank">LinkedIn – Venha conectar!</a>
                 </div>
                 <div class="social-item">
-                    <a href="https://twitter.com/famonteiro85" target="_blank">Twitter</a>
+                    <a href="https://instagram.com/_fabianomonteiro_" target="_blank">Instagram – Espie o que acontece por trás do código</a>
                 </div>
-                <div class="social-item">
-                    <a href="https://instagram.com/_fabianomonteiro_" target="_blank">Instagram</a>
-                </div>
-                <!-- Adicione mais links conforme necessário -->
             </div>
+            <a href="#about" class="call-to-action">Que tal fazermos algo grandioso juntos? ✨</a>
         </section>
     </div>
 
